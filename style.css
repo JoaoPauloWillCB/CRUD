@@ -47,7 +47,7 @@ body{
 }
 
 .form-header{
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
     display: flex;
     justify-content: space-between;
 }
@@ -129,7 +129,7 @@ body{
 
 .continue-button button{
     width: 100%;
-    margin-top: 2.5rem;
+    margin-top: 0.5rem;
     border: none;
     background-color: #6c63ff;
     padding: 0.62rem;
@@ -149,7 +149,7 @@ body{
 }
 
 /*RESPONSIVIDADE*/
-@media screen and (max-width: 1330px){
+@media screen and (max-width: 1300px){
     .form-image{
         display: none;
     }
@@ -176,6 +176,4 @@ body{
         max-height: 18rem;
         padding-right: 1rem;
     }
-
-
 }
