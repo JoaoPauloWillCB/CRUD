@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <title>CRUD-Sabanco</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
                     </div>
 
                     <div class="login-button">
-                        <button><a href="#">Entrar</a></button>
+                        <button><a href="login.php">Entrar</a></button>
                     </div>
                 </div>
 
@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="continue-button">
-                    <button>Continuar</button>
+                    <button><a href="#">Continuar</a></button>
                 </div>
             </form>
         </div>

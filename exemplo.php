@@ -1,1 +1,0 @@
-<?php /*Tag que define o documento como PHP*/
