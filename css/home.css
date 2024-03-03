@@ -8,12 +8,13 @@
 
 body{
     text-align: center;
-    background-color: #6c63ff;
+    background-image: linear-gradient(to right, rgb(96, 131, 247), rgba(85, 16, 163, 0.74));
+
 }
 
 header{
-    background-color: #4037f5;
     padding: 20px;
+    box-shadow: 0px 5px 50px #201658;
 }
 
 nav{
@@ -21,16 +22,20 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #4037f5;
 }
 
 .btn-sair{
     text-decoration: none;
-    background-color: red;
+    background-color: #ff3b3b;
     border: none;
     color: white;
     padding: 5px;
     border-radius: 5px;
+    transition: 0.5s;
+}
+
+.btn-sair:hover{
+    background-color: #ff6262;
 }
 
 .text{
@@ -41,10 +46,11 @@ nav{
 
 .table-box{
     margin: 15px;
+    
 }
 
 .table{
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px;
     color: white;
     font-size: 20px;
     background: rgba(0, 0, 0, 0.5);
@@ -54,7 +60,6 @@ nav{
 
 .text-bemvindo{
     padding: 10px;
-    color: white;
 }
 
 .table tr{
@@ -62,15 +67,37 @@ nav{
 }
 
 #img-pencil{
-    background-color: #0b00d3;
+    background-color: #6c63ff;
     padding: 10px;
     border-radius: 5px;
     margin-top: 5px;
+    transition: 0.5s;
+}
+
+#img-pencil:hover{
+    background-color: #625afcf1;
 }
 
 #img-trash{
-    background-color: rgb(202, 6, 6);
+    background-color: #ff3b3b;
     padding: 10px;
     border-radius: 5px;
     margin-top: 5px;
+    transition: 0.5s;
+}
+
+#img-trash:hover{
+    background-color: #ff6262;
+}
+
+#info-user{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#info-user:hover{
+    padding: 2px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
 }

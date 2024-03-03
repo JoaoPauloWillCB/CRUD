@@ -17,8 +17,6 @@
     $sql = "SELECT * FROM tb_usuarios ORDER BY id_usuario ASC";
     //joga o resultado da query para a variavel result
     $result = $conexao->query($sql);
-
-    $user_data =  mysqli_fetch_assoc($result);
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +36,7 @@
     </header>
 
     <?php
-        echo "<h1 class='text-bemvindo'>Bem Vindo " .$user_data['nome']. "!</h1>";
+        echo "<h1 class='text-bemvindo'>Bem Vindo " .$_SESSION['email']. "!</h1>";
     ?>
     <div class="table-box">
         <table class="table">
@@ -56,7 +54,9 @@
                     {
                         echo "<tr>";
                         echo "<td>" .$user_data['id_usuario']. "</td>";
-                        echo "<td>" .$user_data['nome']. "</td>";
+                        echo "<td>
+                            <a id='info-user' href='infoUser.php?id=$user_data[id_usuario]'>".$user_data['nome']."</a>
+                        </td>";
                         echo "<td>" .$user_data['email']. "</td>";
                         echo "<td>
                             <a id='btn-edit' href='edit.php?id=$user_data[id_usuario]'>

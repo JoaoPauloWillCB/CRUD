@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(96, 131, 247), rgba(85, 16, 163, 0.74));
+}
+
+.box{
+    width: 350px;
+    color: white;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+fieldset{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    scrollbar-color: rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0);
+    border: 3px solid #6c63ff;
+    border-radius: 15px;
+}
+
+legend{
+    border: 1px solid #6c63ff;
+    padding: 5px;
+    text-align: center;
+    background-color: #6c63ff;
+    border-radius: 5px;
+}
+
+.input-box{
+    position: relative;
+}
+
+.input-user{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+}
+
+#login{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: #6c63ff;
+    padding: 10px;
+    border-radius: 10px;
+}

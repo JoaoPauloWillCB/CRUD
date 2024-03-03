@@ -32,7 +32,7 @@
 </head>
 <body>
     <div class="box">
-        <form action="formulario.php" method="post">
+        <form name="formulario1" action="formulario.php" method="post">
             <fieldset>
                 <legend>Cadastre-se!</legend>
                 <br>
@@ -63,17 +63,16 @@
                 <br><br>
                 <div class="input-box">
                     <label for="uf">UF</label>
-                    <select name="estado" id="uf">
+                    <select name="estado" id="uf" onchange="atualizarCidades()">
                         <option value="PR">PR</option>
                         <option value="SC">SC</option>
                         <option value="RS">RS</option>
                     </select>
                 </div>
                 <br><br>
-                <div class="input-box">
                     <label for="cidade">Cidade</label>
-                    <input type="text" name="cidade" id="cidade" class="input-user" required>
-                </div>
+                    <select id="cidade" name="cidade">
+                     </select>
                 <br><br>
                 <div class="input-box">
                     <label for="endereco">Endereço</label>
@@ -88,5 +87,6 @@
             <a id="login" href="login.php">Faça o seu login aqui!</a>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
