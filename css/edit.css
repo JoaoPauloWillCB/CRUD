@@ -13,17 +13,38 @@ body{
 }
 
 .box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    width: 350px;
     color: white;
     position: absolute;
-    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
     border-radius: 15px;
 }
 
-input{
+fieldset{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    scrollbar-color: rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0);
+    border: 3px solid #6c63ff;
+    border-radius: 15px;
+}
+
+legend{
+    border: 1px solid #6c63ff;
+    padding: 5px;
+    text-align: center;
+    background-color: #6c63ff;
+    border-radius: 5px;
+}
+
+.input-box{
+    position: relative;
+}
+
+.input-user{
     background: none;
     border: none;
     border-bottom: 1px solid white;
@@ -31,16 +52,10 @@ input{
     color: white;
     font-size: 15px;
     width: 100%;
-    letter-spacing: 2px;
 }
 
-.input-box{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-button{
+#update{
+    width: 100%;
     background-color: #6c63ff;
     color: white;
     border: none;
@@ -48,13 +63,16 @@ button{
     border-radius: 10px;
 }
 
-button:hover{
+#update:hover{
     background-color: #6b63fff1;
     cursor: pointer;
 }
 
-a{
-    text-align: center;
-    text-decoration: none;
+#login{
     color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px; 
 }
