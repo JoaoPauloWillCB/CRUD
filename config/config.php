@@ -1,5 +1,4 @@
 <?php
-
     /*parametros necessarios para conectar ao banco de dados*/
     $dbHost = 'localhost';
     $dbUser = 'root';
