@@ -5,5 +5,5 @@
     unset($_SESSION['email']);
     unset($_SESSION['cpf']);
     //redireciona para a tela de login
-    header('Location: ../login.php');
+    header('Location: ../View/login.php');
 ?>

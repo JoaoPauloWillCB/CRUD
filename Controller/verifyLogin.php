@@ -23,17 +23,17 @@
         {
             unset($_SESSION['email']);
             unset($_SESSION['cpf']);
-            header('Location: ../login.php');
+            header('Location: ../View/login.php');
         }
         else
         {
             $_SESSION['email'] = $email;
             $_SESSION['cpf'] = $cpf;
-            header('Location: ../home.php');
+            header('Location: ../View/home.php');
         }
     }
     else
     {
-        header('Location: ../login.php');
+        header('Location: ../View/login.php');
     }
 ?>

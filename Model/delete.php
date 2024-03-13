@@ -19,5 +19,5 @@
         }
     }
     //se estiver vazia ele volta para a tela home sem executar nada
-    header('Location: ../home.php');
+    header('Location: ../View/home.php');
 ?>

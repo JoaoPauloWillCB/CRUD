@@ -22,5 +22,5 @@
         $result = $conexao->query($sqlUpdate);
     }
     //volta para a tela home
-    header('Location: ../home.php');
+    header('Location: ../View/home.php');
 ?>

@@ -1,25 +1,5 @@
 <?php
-    /*incluindo a conexão*/
-    include_once('config/config.php');
-    /*verificação para ver se o formulário foi submitado/enviado para o banco*/
-    if(isset($_POST['submit']))
-    {
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $cpf = $_POST['cpf'];
-        $celular = $_POST['celular'];
-        $data_nasc = $_POST['data-nasc'];
-        $estado = $_POST['estado'];
-        $cidade = $_POST['cidade'];
-        $endereco = $_POST['endereco'];
-
-        /*fazendo a query de insert*/
-        $result = mysqli_query($conexao, "INSERT INTO tb_usuarios (nome, email, cpf, celular, date_nascimento, estado, cidade, endereco) VALUES ('$nome', '$email', '$cpf', '$celular', '$data_nasc', '$estado', '$cidade', '$endereco')");
-    
-        //depois de enviar os dados para o banco de dados ele redireciona para a tela de login
-        header('Location: login.php');
-    }
-    
+    include_once('../Model/create.php');
 ?>
 
 <!DOCTYPE html>
@@ -27,12 +7,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="../assets/css/formCad.css">
     <title>CRUD-Sabanco</title>
 </head>
 <body>
     <div class="box">
-        <form name="formulario1" action="formulario.php" method="post">
+        <form name="formulario1" action="../Model/create.php" method="post">
             <fieldset>
                 <legend>Cadastre-se!</legend>
                 <br>
@@ -87,6 +67,6 @@
             <a id="login" href="login.php">Faça o seu login aqui!</a>
         </form>
     </div>
-    <script src="script.js"></script>
+    <script src="../Script/script.js"></script>
 </body>
 </html>
