@@ -1,22 +1,34 @@
-// Mapeamento de cidades por estado
-const cidadesPorEstado = {
-    'PR': ['Curitiba', 'Londrina', 'Maringá', 'Ponta Grossa', 'Cascavel'],
-    'SC': ['Joinville', 'Florianópolis', 'Blumenau', 'São José', 'Itajaí'],
-    'RS': ['Porto Alegre', 'Caixias do Sul', 'Canoas', 'Pelotas', 'Santa Maria']
-  };
-  
-  //Função para atualizar as opções do seletor de cidades com base no estado selecionado
-  function atualizarCidades() {
-    const estadoSelecionado = document.getElementById('uf').value;
-    const cidades = cidadesPorEstado[estadoSelecionado];
-  
-    const cidadeSelect = document.getElementById('cidade');
-    cidadeSelect.innerHTML = ''; //Limpa as opções atuais
-  
-    cidades.forEach(cidade => {
-      const option = document.createElement('option');
-      option.textContent = cidade;
-      option.value = cidade;
-      cidadeSelect.appendChild(option);
+const urlUF = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados';
+const uf = document.getElementById('uf');
+const cidades = document.getElementById('cidade');
+
+uf.addEventListener('change', async function(){
+    const urlCidades = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados/' + uf.value + '/municipios';
+    const request = await fetch(urlCidades);
+    const response = await request.json();
+    
+    let options = '';
+    response.forEach(cidades => {
+        options += '<option>'+ cidades.nome +'</option>';
     });
-}
+
+    cidades.innerHTML = options;
+})
+
+window.addEventListener('load', async ()=>{
+    const request = await fetch(urlUF);
+    const response = await request.json();
+  
+    //cria um elemento
+    const options = document.createElement('optgroup');
+    //da a ele um atributo
+    options.setAttribute('label', 'Estados');
+
+
+    response.forEach(uf => {
+        options.innerHTML += '<option>' + uf.sigla + '</option>';
+    });
+
+    uf.append(options);
+})
+

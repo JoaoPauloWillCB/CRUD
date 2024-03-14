@@ -43,10 +43,8 @@
                 <br><br>
                 <div class="input-box">
                     <label for="uf">UF</label>
-                    <select name="estado" id="uf" onchange="atualizarCidades()">
-                        <option value="PR" <?php echo $estado == 'PR' ? 'selected' : ''?>>PR</option>
-                        <option value="SC" <?php echo $estado == 'SC' ? 'selected' : ''?> >SC</option>
-                        <option value="RS" <?php echo $estado == 'RS' ? 'selected' : ''?> >RS</option>
+                    <select name="estado" id="uf">
+                        <option></option>
                     </select>
                 </div>
                 <br><br>

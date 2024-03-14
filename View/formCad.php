@@ -43,10 +43,8 @@
                 <br><br>
                 <div class="input-box">
                     <label for="uf">UF</label>
-                    <select name="estado" id="uf" onchange="atualizarCidades()">
-                        <option value="PR">PR</option>
-                        <option value="SC">SC</option>
-                        <option value="RS">RS</option>
+                    <select name="estado" id="uf">
+                        <option></option>
                     </select>
                 </div>
                 <br><br>
