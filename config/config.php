@@ -3,7 +3,7 @@
     $dbHost = 'localhost';
     $dbUser = 'root';
     $dbPassword = '';
-    $dbName = 'crud_sabanco';
+    $dbName = 'crud';
 
     /*iniciando conexão com o banco de dados*/
     $conexao = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);

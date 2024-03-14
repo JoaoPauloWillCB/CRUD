@@ -18,10 +18,8 @@ uf.addEventListener('change', async function(){
 window.addEventListener('load', async ()=>{
     const request = await fetch(urlUF);
     const response = await request.json();
-  
-    //cria um elemento
+
     const options = document.createElement('optgroup');
-    //da a ele um atributo
     options.setAttribute('label', 'Estados');
 
 
