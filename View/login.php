@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/login.css">
-    <title>CRUD-Sabanco</title>
+    <title>CRUD</title>
 </head>
 <body>
-    <div class="box">
+    <div class="box_img">
+        <h1>Faça seu login</h1>
+        <h2>e entre para o nosso time!</h2>
+    </div>
+
+    <div class="box_log">
         <h1>Login</h1>
         <form action="../Controller/verifyLogin.php" method="post" class="input-box">
             <label for="email">E-mail</label>
@@ -21,6 +26,5 @@
             <a href="formCad.php">Cadastre-se aqui!</a>
         </form>
     </div>
-    
 </body>
 </html>
