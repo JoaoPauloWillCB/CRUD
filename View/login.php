@@ -7,24 +7,27 @@
     <title>CRUD</title>
 </head>
 <body>
-    <div class="box_img">
-        <h1>Faça seu login</h1>
-        <h2>e entre para o nosso time!</h2>
-    </div>
+    <div class="main">
+        <div class="box_img">
+            <h1>Faça seu login</h1>
+            <h2>e entre para o nosso time!</h2>
+            <img src="../assets/img/login.png" alt="Login">
+        </div>
 
-    <div class="box_log">
-        <h1>Login</h1>
-        <form action="../Controller/verifyLogin.php" method="post" class="input-box">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" required>
-            <br><br>
-            <label for="cpf">CPF</label>
-            <input type="number" name="cpf" required>
-            <br><br>
-            <button type="submit" name="submit" value="Enviar">Entrar</button>
-            <br>
-            <a href="formCad.php">Cadastre-se aqui!</a>
-        </form>
+        <div class="box_log">
+            <h1>Login</h1>
+            <form action="../Controller/verifyLogin.php" method="post" class="input-box">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" required>
+                <br><br>
+                <label for="cpf">CPF</label>
+                <input type="number" name="cpf" required>
+                <br><br>
+                <button type="submit" name="submit" value="Enviar">Entrar</button>
+                <br>
+                <a href="formCad.php">Cadastre-se aqui!</a>
+            </form>
+        </div>
     </div>
 </body>
 </html>

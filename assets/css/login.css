@@ -13,6 +13,28 @@ body{
     background-color: #201b2c;
 }
 
+/*----------MAIN----------*/
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    width: 1000px;
+    border-radius: 15px;
+}
+
+.box_img{
+    color: #00ff88;
+    text-align: justify;
+}
+
+.box_img img{
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+}
+
 /*----------CAMPOS LOGIN----------*/
 .box_log{
     display: flex;
