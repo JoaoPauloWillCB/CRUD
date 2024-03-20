@@ -9,8 +9,8 @@
 <body>
     <div class="main">
         <div class="box_img">
-            <h1>Faça seu login</h1>
-            <h2>e entre para o nosso time!</h2>
+            <h1>Seja Bem-Vindo(a) de volta!</h1>
+            <h2>faça seu login para continuar.</h2>
             <img src="../assets/img/login.png" alt="Login">
         </div>
 
