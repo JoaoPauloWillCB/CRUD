@@ -8,24 +8,24 @@
 </head>
 <body>
     <div class="main">
-        <div class="box_img">
+        <div class="box-img">
             <h1>Seja Bem-Vindo(a) de volta!</h1>
             <h2>faça seu login para continuar.</h2>
-            <img src="../assets/img/login.png" alt="Login">
+            <img class="img" src="../assets/img/login.png" alt="Login">
         </div>
 
-        <div class="box_log">
+        <div class="box-login">
             <h1>Login</h1>
-            <form action="../Controller/verifyLogin.php" method="post" class="input-box">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" required>
+            <form action="../Controller/verifyLogin.php" method="post" class="input-group">
+                <label for="email">Nome</label>
+                <input class="input-login" type="text" name="nome" required>
                 <br><br>
                 <label for="cpf">CPF</label>
-                <input type="number" name="cpf" required>
+                <input class="input-login" type="number" name="cpf" required>
                 <br><br>
                 <button type="submit" name="submit" value="Enviar">Entrar</button>
                 <br>
-                <a href="formCad.php">Cadastre-se aqui!</a>
+                <a class="ancora-cad" href="formCad.php">Cadastre-se aqui!</a>
             </form>
         </div>
     </div>

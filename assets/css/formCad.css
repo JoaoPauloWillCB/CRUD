@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-/*----------ESTILO GERAL----------*/
+/*----------GERAL----------*/
+:root{
+    --verde: #00ff88;
+    --cinza-escuro: #201b2c;
+    --cinza-claro: #47425c;
+    --roxo-escuro: #2b134b;
+}
+
 *{
     font-family: 'Inter', sans-serif;
 }
@@ -10,10 +17,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #201b2c;
+    background-color: var(--cinza-escuro);
 }
 
-.box{
+/*----------MAIN----------*/
+.main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,27 +31,29 @@ body{
     border-radius: 15px;
 }
 
+/*----------IMG/TXT----------*/
 .box-img{
-    color: #00ff88;
+    color: var(--verde);
     text-align: justify;
 }
 
-.box-img img{
+.img{
     width: 450px;
     height: 450px;
     padding-right: 20px;
 }
 
+/*----------CAMPOS DE REGISTRO----------*/
 .input-group{
-    color: white;
-    width: 600px;
-    height: 450px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #47425c;
+    width: 600px;
+    height: 450px;
     padding: 10px;
     border-radius: 15px;
+    color: white;
+    background-color: var(--cinza-claro);
     box-shadow: 0px 10px 40px #00000056;
 }
 
@@ -52,18 +62,18 @@ body{
     padding-left: 1.5rem;
 }
 
-.main-form{
+.form-cad{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1.5rem;
 }
 
-.input-box{
+.input-cad{
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
-    
+    padding: 10px;
 }
 
 input{
@@ -77,6 +87,7 @@ input{
     letter-spacing: 2px;
 }
 
+/*----------BOTÃO CONTINUAR----------*/
 .submit-form{
     display: flex;
     flex-direction: column;
@@ -86,13 +97,13 @@ input{
 }
 
 .submit-form button{
-    background-color: #00ff88;
-    color: #2b134b;
+    border: none;
     width: 430px;
     font-size: 15px;
-    border: none;
     padding: 10px;
     border-radius: 10px;
+    color: var(--roxo-escuro);
+    background-color: var(--verde);
     box-shadow: 0px 10px 40px -12px #00ff8052;
 }
 
@@ -101,9 +112,10 @@ input{
     cursor: pointer;
 }
 
-.submit-form a{
+/*----------LINK LOGIN----------*/
+.ancora-login{
     text-align: center;
     text-decoration: none;
-    color: white;
     padding-bottom: 20px;
+    color: white;
 }

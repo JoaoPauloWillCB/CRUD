@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-/*----------ESTILO GERAL----------*/
+/*----------GERAL----------*/
+:root{
+    --verde: #00ff88;
+    --cinza-escuro: #201b2c;
+    --cinza-claro: #47425c;
+    --roxo-escuro: #2b134b;
+}
+
 *{
     font-family: 'Inter', sans-serif;
 }
 
 body{
-    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #201b2c;
+    height: 95vh;
+    background-color: var(--cinza-escuro);
 }
 
 /*----------MAIN----------*/
@@ -24,69 +31,70 @@ body{
     border-radius: 15px;
 }
 
-.box_img{
-    color: #00ff88;
+/*----------IMG/TXT----------*/
+.box-img{
     text-align: justify;
+    color: var(--verde);
 }
 
-.box_img img{
+.img{
     width: 400px;
     height: 400px;
     padding: 10px;
 }
 
 /*----------CAMPOS LOGIN----------*/
-.box_log{
+.box-login{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #47425c;
     width: 300px;
-    color: white;
     padding: 40px;
     border-radius: 15px;
+    color: white;
+    background: var(--cinza-claro);
     box-shadow: 0px 10px 40px #00000056;
 }
 
-.box h1{
-    color: #00ff88;
+.box-login h1{
+    color: var(--verde);
 }
 
-input{
-    background: none;
-    border: none;
-    border-bottom: 1px solid white;
-    outline: none;
-    color: white;
-    font-size: 15px;
-    width: 100%;
-    letter-spacing: 2px;
-}
-
-.input-box{
+.input-group{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-/*----------BOTÃO LOGIN ----------*/
-button{
-    background-color: #00ff88;
-    color: #2b134b;
+.input-login{
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
     font-size: 15px;
+    letter-spacing: 2px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/*----------BOTÃO LOGIN ----------*/
+.input-group button{
     border: none;
     padding: 10px;
+    font-size: 15px;
     border-radius: 10px;
+    color: var(--roxo-escuro);
+    background-color: var(--verde);
     box-shadow: 0px 10px 40px -12px #00ff8052;
 }
 
-button:hover{
-    background-color: #00d873;
+.input-group button:hover{
     cursor: pointer;
+    background-color: #00d873;
 }
 
 /*----------LINK CADASTRO----------*/
-a{
+.ancora-cad{
     text-align: center;
     text-decoration: none;
     color: white;

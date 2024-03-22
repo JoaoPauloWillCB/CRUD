@@ -8,18 +8,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/home.css">
-    <title>CRUD-Sabanco</title>
+    <title>CRUD</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#" class="text">CRUD-Sabanco</a>
+    <header class="cabecalho">
+        <nav class="navigation">
+            <a href="#" class="title">CRUD</a>
             <a href="../Controller/logout.php" class="btn-sair">Sair</a>
         </nav>
     </header>
 
     <?php
-        echo "<h1 class='text-bemvindo'>Bem Vindo " .$_SESSION['email']. "!</h1>";
+        echo "<h1 class='text-bemvindo'>Bem Vindo(a) " .$_SESSION['nome']. "!</h1>";
     ?>
     <div class="table-box">
         <table class="table">

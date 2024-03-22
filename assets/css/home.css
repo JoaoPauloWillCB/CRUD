@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-/*----------ESTILO GERAL----------*/
+/*----------GERAL----------*/
+:root{
+    --verde: #00ff88;
+    --cinza-escuro: #201b2c;
+    --cinza-claro: #47425c;
+    --roxo-escuro: #2b134b;
+}
+
 *{
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -9,98 +16,82 @@
 
 body{
     text-align: center;
-    background-image: linear-gradient(to right, rgb(96, 131, 247), rgba(85, 16, 163, 0.74));
-
+    background-color: var(--cinza-escuro);
 }
 
 /*----------CABEÇALHO----------*/
-header{
+.cabecalho{
     padding: 20px;
-    box-shadow: 0px 5px 50px #201658;
+    background-color: var(--cinza-claro);
+    box-shadow: 0px 10px 40px #00000056;
 }
 
-nav{
+.navigation{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
+.title{
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--verde);
+}
+
 .btn-sair{
     text-decoration: none;
-    background-color: #ff3b3b;
+    background-color: var(--verde);
     border: none;
-    color: white;
+    color: var(--roxo-escuro);
     padding: 5px;
     border-radius: 5px;
     transition: 0.5s;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
 }
 
 .btn-sair:hover{
-    background-color: #ff6262;
+    background-color: #00d873;
 }
 
-.text{
-    font-size: 25px;
-    text-decoration: none;
-    color: white;
+.text-bemvindo{
+   padding-top: 15px;
+   color: var(--verde);
 }
 
 /*----------TABELA PARA LISTAGEM----------*/
 .table-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 15px;
-    
 }
 
 .table{
-    border-radius: 15px;
+    border-radius: 5px;
     color: white;
     font-size: 20px;
     background: rgba(0, 0, 0, 0.5);
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
-}
-
-.text-bemvindo{
-    padding: 10px;
 }
 
 .table tr{
     border-bottom: 1px solid white;
 }
 
-#img-pencil{
-    background-color: #6c63ff;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 5px;
-    transition: 0.5s;
+/*----------BOTÕES----------*/
+#img-delete{
+    width: 25px;
+    padding: 5px;
 }
 
-#img-pencil:hover{
-    background-color: #625afcf1;
+#img-info{
+    width: 25px;
+    padding: 5px;
 }
 
-#img-trash{
-    background-color: #ff3b3b;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 5px;
-    transition: 0.5s;
-}
-
-#img-trash:hover{
-    background-color: #ff6262;
-}
-
-#info-user{
-    color: white;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-#info-user:hover{
-    padding: 2px;
-    border-radius: 5px;
-    background: rgba(0, 0, 0, 0.5);
+#img-edit{
+    width: 25px;
+    padding: 5px;
 }
